@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos — Círculo Libre</title>
+  <meta name="description" content="Próximos eventos, batallas y sesiones de Círculo Libre en Tijuana.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭕</text></svg>">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="loader-text">EVENTOS</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">CL</div>
+      <div class="logo-text"><span>Círculo</span> Libre</div>
+    </a>
+    <div class="nav-menu">
+      <a href="index.html">Inicio</a>
+      <a href="eventos.html" class="active">Eventos</a>
+      <a href="videos.html">Videos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="contactos.html">Contacto</a>
+      <a href="acerca.html">Acerca De</a>
+    </div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Inicio</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="videos.html">Videos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="contactos.html">Contacto</a>
+    <a href="acerca.html">Acerca De</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p style="animation: fadeInUp 1s ease 0.3s both;">Próximas fechas</p>
+      <h1 style="animation: fadeInUp 1s ease 0.5s both;">Eventos</h1>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section-padding" style="background:var(--dark2);">
+    <div class="section-header reveal">
+      <div class="section-label">Calendario</div>
+      <h2 class="section-title">Próximos Eventos & Sesiones</h2>
+      <div class="section-line"></div>
+      <p class="section-desc">Batallas 1 vs 1, 2 vs 2 y sesiones abiertas. A nivel regional, nacional e internacional.</p>
+    </div>
+
+    <div class="events-grid">
+      <!-- Event 1 -->
+      <div class="event-card reveal delay-1">
+        <div class="event-image">
+          <span class="event-icon">🔥</span>
+          <div class="event-date-badge">
+            <span class="day">15</span>
+            <span class="month">Próximo</span>
+          </div>
+        </div>
+        <div class="event-info">
+          <span class="event-tag">Sesión Abierta</span>
+          <h3>Cypher Sábados</h3>
+          <p>Sesión abierta de práctica y convivencia. Todos los estilos y niveles bienvenidos. ¡Ven a bailar!</p>
+          <div class="event-meta">
+            <span>📍 Parque de la 8</span>
+            <span>🕐 5:00 - 8:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card reveal delay-2">
+        <div class="event-image">
+          <span class="event-icon">⚔️</span>
+          <div class="event-date-badge">
+            <span class="day">TBA</span>
+            <span class="month">Próximo</span>
+          </div>
+        </div>
+        <div class="event-info">
+          <span class="event-tag">Batalla</span>
+          <h3>1 vs 1 All Styles</h3>
+          <p>Batalla de baile todos los estilos. Modalidad 1 vs 1. Inscripciones abiertas. Premios para los ganadores.</p>
+          <div class="event-meta">
+            <span>📍 Tijuana, B.C.</span>
+            <span>🏆 Premios</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event-card reveal delay-3">
+        <div class="event-image">
+          <span class="event-icon">🎶</span>
+          <div class="event-date-badge">
+            <span class="day">TBA</span>
+            <span class="month">Próximo</span>
+          </div>
+        </div>
+        <div class="event-info">
+          <span class="event-tag">Especial</span>
+          <h3>2 vs 2 Breaking Battle</h3>
+          <p>Batalla especial en modalidad 2 vs 2. Competencia regional con jueces invitados.</p>
+          <div class="event-meta">
+            <span>📍 Por confirmar</span>
+            <span>👥 2 vs 2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="reveal">
+      <h2>¿Quieres participar en un <span style="color:var(--secondary)">evento</span>?</h2>
+      <p>Contáctanos para inscribirte o para más información sobre nuestros próximos eventos y batallas.</p>
+      <a href="contactos.html" class="btn btn-secondary">Inscríbete →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo"><span>Círculo</span> Libre</div>
+        <p>Un espacio para bailar y expresarte libremente. Tijuana, B.C. desde 2022.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Navegación</h4>
+        <a href="index.html">Inicio</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="videos.html">Videos</a>
+        <a href="noticias.html">Noticias</a>
+      </div>
+      <div class="footer-column">
+        <h4>Más</h4>
+        <a href="contactos.html">Contacto</a>
+        <a href="acerca.html">Acerca De</a>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2022 — 2025 Círculo Libre. Todos los derechos reservados.</span>
+      <span class="walls">WALLS / GODZKILLA</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

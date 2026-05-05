@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca De — Círculo Libre</title>
+  <meta name="description" content="Conoce la historia, misión, visión y valores de Círculo Libre. Co-fundadores Diego Ramos y Alexis Paredes.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭕</text></svg>">
+</head>
+<body>
+
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="loader-text">ACERCA DE</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">CL</div>
+      <div class="logo-text"><span>Círculo</span> Libre</div>
+    </a>
+    <div class="nav-menu">
+      <a href="index.html">Inicio</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="videos.html">Videos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="contactos.html">Contacto</a>
+      <a href="acerca.html" class="active">Acerca De</a>
+    </div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Inicio</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="videos.html">Videos</a>
+    <a href="noticias.html">Noticias</a>
+    <a href="contactos.html">Contacto</a>
+    <a href="acerca.html">Acerca De</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p style="animation: fadeInUp 1s ease 0.3s both;">Nuestra historia</p>
+      <h1 style="animation: fadeInUp 1s ease 0.5s both;">Acerca De</h1>
+    </div>
+  </section>
+
+  <!-- ABOUT FULL -->
+  <section class="section-padding" style="background:var(--dark2);">
+    <div class="about-grid">
+      <div class="about-image-container reveal-left">
+        <div class="about-image-placeholder">
+          <div class="placeholder-content">
+            <div class="placeholder-icon">⭕</div>
+            <div class="placeholder-text">WALLS / GODZKILLA<br>Círculo Libre<br>EST 2022</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal-right">
+        <div class="about-label">Nuestra Historia</div>
+        <h2>Círculo Libre — Desde 2022</h2>
+        <p>
+          Círculo Libre es un proyecto que brinda un espacio (cypher o sesiones) para bailar y expresarte libremente que va dirigido a todos los niveles y estilos de bailes urbanos: Breaking, House, Popping, Hip-Hop, Locking, Whacking, HH Freestyle y más.
+        </p>
+        <p>
+          Se realiza los sábados de 5:00 PM a 8:00 PM cada 15 días, 2 ocasiones por mes. Inicia en febrero del 2022 en el Parque de la 8, ubicado en la zona centro de Tijuana, por la necesidad de que no había espacios donde poder practicar y convivir con otros bailarines.
+        </p>
+        <p>
+          Todas las edades son bienvenidas a las sesiones. El propósito es inspirar y ayudar a las nuevas generaciones en Tijuana. Cualquier edad se puede bailar y seguir aprendiendo.
+        </p>
+        <p>
+          El principal objetivo es promover y brindar un lugar seguro a los bailarines donde se puedan expresar, practicar y desarrollarse como personas y bailarines. Otro objetivo es realizar eventos de batallas de baile en Tijuana con modalidad 1 vs 1 o 2 vs 2 a nivel regional, nacional e internacional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="mission-vision section-padding">
+    <div class="section-header reveal">
+      <div class="section-label">Propósito</div>
+      <h2 class="section-title">Misión & Visión</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="mv-grid">
+      <div class="mv-card reveal delay-1">
+        <div class="mv-icon">🎯</div>
+        <h3>Misión</h3>
+        <p>Proporcionar a la comunidad de danza en Tijuana un espacio donde puedan bailar y expresarse.</p>
+      </div>
+      <div class="mv-card reveal delay-2">
+        <div class="mv-icon">🚀</div>
+        <h3>Visión</h3>
+        <p>Ser una organización reconocida en Tijuana y gran parte de la república mexicana, en realizar eventos y sesiones, chicos y gran escala, de danza urbana.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section-padding" style="background:var(--dark2);">
+    <div class="section-header reveal">
+      <div class="section-label">Lo que nos define</div>
+      <h2 class="section-title">Nuestros Valores</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal delay-1">
+        <div class="value-icon">🤝</div>
+        <h4>Amistad</h4>
+      </div>
+      <div class="value-card reveal delay-2">
+        <div class="value-icon">🔥</div>
+        <h4>Pasión</h4>
+      </div>
+      <div class="value-card reveal delay-3">
+        <div class="value-icon">🙏</div>
+        <h4>Respeto</h4>
+      </div>
+      <div class="value-card reveal delay-4">
+        <div class="value-icon">✅</div>
+        <h4>Responsabilidad</h4>
+      </div>
+      <div class="value-card reveal delay-5">
+        <div class="value-icon">💪</div>
+        <h4>Compromiso</h4>
+      </div>
+      <div class="value-card reveal delay-6">
+        <div class="value-icon">🕊️</div>
+        <h4>Libertad</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDERS -->
+  <section class="founders-section section-padding">
+    <div class="section-header reveal">
+      <div class="section-label">El equipo</div>
+      <h2 class="section-title">Co-Fundadores</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="founders-grid">
+      <div class="founder-card reveal delay-1">
+        <div class="founder-avatar">🕺</div>
+        <h3>Diego Ramos</h3>
+        <div class="founder-role">Co-Fundador</div>
+        <div class="founder-from">📍 Agua Prieta, Sonora</div>
+      </div>
+
+      <div class="founder-card reveal delay-2">
+        <div class="founder-avatar">🕺</div>
+        <h3>Alexis Paredes</h3>
+        <div class="founder-role">Co-Fundador</div>
+        <div class="founder-from">📍 Tijuana, Baja California</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTER -->
+  <section class="counter-section">
+    <div class="counter-grid">
+      <div class="counter-item reveal delay-1">
+        <div class="counter-number" data-target="3">0</div>
+        <div class="counter-label">Años activos</div>
+      </div>
+      <div class="counter-item reveal delay-2">
+        <div class="counter-number" data-target="7">0</div>
+        <div class="counter-label">Estilos de baile</div>
+      </div>
+      <div class="counter-item reveal delay-3">
+        <div class="counter-number" data-target="2">0</div>
+        <div class="counter-label">Co-Fundadores</div>
+      </div>
+      <div class="counter-item reveal delay-4">
+        <div class="counter-number" data-target="100">0</div>
+        <div class="counter-label">Sesiones realizadas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="reveal">
+      <h2>Sé parte del <span style="color:var(--primary)">Círculo</span></h2>
+      <p>Todos los estilos y niveles son bienvenidos. Ven a bailar con nosotros.</p>
+      <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+        <a href="contactos.html" class="btn btn-primary">Contáctanos →</a>
+        <a href="eventos.html" class="btn btn-outline">Ver Eventos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo"><span>Círculo</span> Libre</div>
+        <p>Un espacio para bailar y expresarte libremente. Tijuana, B.C. desde 2022.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Navegación</h4>
+        <a href="index.html">Inicio</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="videos.html">Videos</a>
+        <a href="noticias.html">Noticias</a>
+      </div>
+      <div class="footer-column">
+        <h4>Más</h4>
+        <a href="contactos.html">Contacto</a>
+        <a href="acerca.html">Acerca De</a>
+      </div>
+      <div class="footer-column">
+        <h4>Síguenos</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2022 — 2025 Círculo Libre. Todos los derechos reservados.</span>
+      <span class="walls">WALLS / GODZKILLA</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

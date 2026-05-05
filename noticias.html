@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Círculo Libre | Noticias</title>
+  <meta name="description" content="Noticias, comunicados y actualizaciones de Círculo Libre." />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="./index.html">
+          <div class="logoMark" aria-hidden="true"></div>
+          <div>
+            <h1>CÍRCULO LIBRE</h1>
+            <span>WALLS / GODZKILLA · EST 2022</span>
+          </div>
+        </a>
+        <nav class="menu" aria-label="Navegación principal">
+          <a data-nav href="./index.html">Inicio</a>
+          <a data-nav href="./eventos.html">Eventos</a>
+          <a data-nav href="./videos.html">Videos</a>
+          <a data-nav href="./noticias.html">Noticias</a>
+          <a data-nav href="./contacto.html">Contacto</a>
+          <a data-nav href="./acerca.html">Acerca de</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Noticias</h2>
+        <p class="hint">Comunicados oficiales, cambios de sede y anuncios.</p>
+      </div>
+
+      <div class="grid3">
+        <article class="card" data-aos="fade-up">
+          <h3>Comunicado (plantilla)</h3>
+          <p>
+            Publica aquí avisos de: cambio de lugar, cancelación por clima, recordatorios de reglas, etc.
+          </p>
+          <div class="hr"></div>
+          <p class="small">
+            Fecha: Por definir<br/>
+            Título: Sesión confirmada / Cambio de sede / Anuncio de battle
+          </p>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="90">
+          <h3>Reglas del espacio</h3>
+          <p>
+            Respeto, cuidado mutuo y convivencia. El objetivo es que todos puedan practicar sin presión
+            y con seguridad.
+          </p>
+          <div class="hr"></div>
+          <p class="small">
+            Sugerencia: agrega un bloque fijo con reglas básicas para que siempre estén visibles.
+          </p>
+        </article>
+
+        <article class="card" data-aos="fade-up" data-aos-delay="180">
+          <h3>Resumen mensual</h3>
+          <p>
+            Mantén un resumen por mes: cuántas sesiones hubo, highlights, invitados, y objetivos del siguiente mes.
+          </p>
+          <div class="hr"></div>
+          <p class="small">
+            Esto te ayuda a mostrar consistencia, crecimiento y visión.
+          </p>
+        </article>
+      </div>
+
+      <section class="section" style="padding-bottom:0">
+        <div class="card" data-aos="fade-up">
+          <h3>Lista de publicaciones</h3>
+          <p class="small">Copia/pega este formato y agrega tus noticias reales.</p>
+          <div class="list">
+            <div class="item" data-aos="fade-up" data-aos-delay="40">
+              <strong>Noticia #1</strong>
+              <span>Por publicar</span>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-delay="80">
+              <strong>Noticia #2</strong>
+              <span>Por publicar</span>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-delay="120">
+              <strong>Noticia #3</strong>
+              <span>Por publicar</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div><p class="small">© <span id="year"></span> Círculo Libre.</p></div>
+        <div><p class="small"><a href="./contacto.html">Contacto</a></p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Círculo Libre | Contacto</title>
+  <meta name="description" content="Contacto de Círculo Libre: colaboraciones, eventos, prensa y comunidad." />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="./index.html">
+          <div class="logoMark" aria-hidden="true"></div>
+          <div>
+            <h1>CÍRCULO LIBRE</h1>
+            <span>WALLS / GODZKILLA · EST 2022</span>
+          </div>
+        </a>
+        <nav class="menu" aria-label="Navegación principal">
+          <a data-nav href="./index.html">Inicio</a>
+          <a data-nav href="./eventos.html">Eventos</a>
+          <a data-nav href="./videos.html">Videos</a>
+          <a data-nav href="./noticias.html">Noticias</a>
+          <a data-nav href="./contacto.html">Contacto</a>
+          <a data-nav href="./acerca.html">Acerca de</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Contacto</h2>
+        <p class="hint">Colaboraciones, eventos, patrocinios y comunidad.</p>
+      </div>
+
+      <div class="grid3">
+        <section class="card" data-aos="fade-up" style="grid-column: span 2;">
+          <h3>Envíanos un mensaje</h3>
+          <p class="small">
+            GitHub Pages no procesa formularios por sí solo. Este formulario abre tu app de correo con el mensaje listo.
+            Si después quieres formulario real, se puede conectar con servicios externos.
+          </p>
+          <div class="hr"></div>
+
+          <form class="form" onsubmit="return openMail(event)">
+            <input class="input" id="name" name="name" placeholder="Nombre" required />
+            <input class="input" id="email" name="email" placeholder="Correo" type="email" required />
+            <input class="input" id="subject" name="subject" placeholder="Asunto" required />
+            <textarea class="input" id="message" name="message" placeholder="Mensaje" required></textarea>
+            <button class="btn primary" type="submit">Enviar</button>
+          </form>
+        </section>
+
+        <aside class="card" data-aos="fade-up" data-aos-delay="110">
+          <h3>Datos</h3>
+          <p class="small">
+            Reemplaza por tus datos reales:
+          </p>
+          <div class="hr"></div>
+          <p class="small">
+            Correo: tu-correo@dominio.com<br/>
+            Instagram: @circulolibre (ejemplo)<br/>
+            Ciudad: Tijuana, Baja California
+          </p>
+          <div class="hr"></div>
+          <p class="small">
+            Horario de sesiones: sábados 5:00 pm – 8:00 pm (cada 15 días).
+          </p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div><p class="small">© <span id="year"></span> Círculo Libre.</p></div>
+        <div><p class="small"><a href="./acerca.html">Acerca de</a></p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openMail(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const to = "tu-correo@dominio.com"; // cámbialo
+      const body =
+        "Nombre: " + name + "\n" +
+        "Correo: " + email + "\n\n" +
+        message;
+
+      const mailto = "mailto:" + encodeURIComponent(to)
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailto;
+      return false;
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

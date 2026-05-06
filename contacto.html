@@ -57,7 +57,7 @@
                             <p>Cada 15 días (2 veces al mes)</p>
                         </div>
                     </div>
-                      <div class="info-item">
+                    <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
@@ -82,20 +82,38 @@
                     <div class="social-links">
                         <h3>Síguenos</h3>
                         <div class="social-icons">
-                            <!-- REEMPLAZA CON TUS ENLACES REALES -->
-                            <a href="https://www.facebook.com/TU_PAGINA" target="_blank" aria-label="Facebook">
+                            <!-- FACEBOOK - Cambia TU_PAGINA_FACEBOOK -->
+                            <a href="https://www.facebook.com/TU_PAGINA_FACEBOOK" 
+                               target="_blank" 
+                               aria-label="Facebook">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <a href="https://www.instagram.com/circulo_libre" target="_blank" aria-label="Instagram">
+                            
+                            <!-- INSTAGRAM - Cambia TU_USUARIO_INSTAGRAM -->
+                            <a href="https://www.instagram.com/circulo_libre" 
+                               target="_blank" 
+                               aria-label="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.youtube.com/@circulo_libre" target="_blank" aria-label="YouTube">
+                            
+                            <!-- YOUTUBE - Cambia TU_CANAL_YOUTUBE -->
+                            <a href="https://www.youtube.com/c/TU_CANAL_YOUTUBE" 
+                               target="_blank" 
+                               aria-label="YouTube">
                                 <i class="fab fa-youtube"></i>
                             </a>
-                            <a href="https://www.tiktok.com/@circulo_libre" target="_blank" aria-label="TikTok">
+                            
+                            <!-- TIKTOK - Cambia TU_USUARIO_TIKTOK -->
+                            <a href="https://www.tiktok.com/@TU_USUARIO_TIKTOK" 
+                               target="_blank" 
+                               aria-label="TikTok">
                                 <i class="fab fa-tiktok"></i>
                             </a>
-                            <a href="https://wa.me/526644954786" target="_blank" aria-label="WhatsApp">
+                            
+                            <!-- WHATSAPP - Cambia TU_NUMERO (sin espacios ni guiones) -->
+                            <a href="https://wa.me/526644954786?text=Hola,%20me%20interesa%20información%20sobre%20Círculo%20Libre" 
+                               target="_blank" 
+                               aria-label="WhatsApp">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
@@ -105,65 +123,45 @@
                 <div class="contact-form-wrapper animate-fade-in">
                     <h2>Envíanos un Mensaje</h2>
                     
-                    <!-- FORMULARIO CONFIGURADO CON TU FORMSPREE -->
+                    <!-- OPCIÓN 1: FORMSPREE (Recomendado - Gratis hasta 50 envíos/mes) -->
+                    <!-- Regístrate en https://formspree.io y obtén tu endpoint -->
                     <form class="contact-form" 
-                          id="contactForm"
                           action="https://formspree.io/f/mjgloowb" 
                           method="POST">
                         
-                        <!-- Campo oculto para identificar de dónde viene -->
-                        <input type="hidden" name="_subject" value="Nuevo mensaje desde Círculo Libre Web">
-                        
-                        <!-- Página de agradecimiento (opcional) -->
-                        <input type="hidden" name="_next" value="https://tu-sitio.github.io/gracias.html">
-                        
                         <div class="form-group">
-                            <input type="text" 
-                                   name="nombre" 
-                                   placeholder="Nombre Completo" 
-                                   required>
+                            <input type="text" name="name" placeholder="Nombre" required>
                         </div>
-                        
                         <div class="form-group">
-                            <input type="email" 
-                                   name="email" 
-                                   placeholder="Correo Electrónico" 
-                                   required>
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
                         </div>
-                        
                         <div class="form-group">
-                            <input type="tel" 
-                                   name="telefono" 
-                                   placeholder="Teléfono (Opcional)">
+                            <input type="tel" name="phone" placeholder="Teléfono (Opcional)">
                         </div>
-                        
                         <div class="form-group">
-                            <select name="asunto" required>
+                            <select name="subject" required>
                                 <option value="">Selecciona un tema</option>
-                                <option value="Información sobre sesiones">Información sobre sesiones</option>
-                                <option value="Eventos y batallas">Eventos y batallas</option>
-                                <option value="Colaboración">Colaboración</option>
-                                <option value="Workshops">Workshops</option>
-                                <option value="Otro">Otro</option>
+                                <option value="sesiones">Información sobre sesiones</option>
+                                <option value="eventos">Eventos y batallas</option>
+                                <option value="colaboracion">Colaboración</option>
+                                <option value="otro">Otro</option>
                             </select>
                         </div>
-                        
                         <div class="form-group">
-                            <textarea name="mensaje" 
-                                     placeholder="Escribe tu mensaje aquí..." 
-                                     rows="5" 
-                                     required></textarea>
+                            <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
                         </div>
-                        
-                        <!-- Botón de envío -->
-                        <button type="submit" class="submit-btn" id="submitBtn">
-                            <span class="btn-text">Enviar Mensaje</span>
-                            <i class="fas fa-paper-plane"></i>
+                        <button type="submit" class="submit-btn">
+                            Enviar Mensaje <i class="fas fa-paper-plane"></i>
                         </button>
-                        
-                        <!-- Mensaje de estado -->
-                        <div id="formStatus" class="form-status"></div>
                     </form>
+
+                    <!-- OPCIÓN 2: MAILTO (Más simple pero abre el correo del usuario) -->
+                    <!-- 
+                    <form class="contact-form" 
+                          action="mailto:tucorreo@ejemplo.com" 
+                          method="post" 
+                          enctype="text/plain">
+                    -->
                 </div>
             </div>
         </div>
@@ -171,36 +169,11 @@
 
     <footer class="footer">
         <div class="footer-content">
-               <p>&copy; 2026 Círculo Libre</p>
+            <p>&copy; 2024 Círculo Libre. Todos los derechos reservados.</p>
             <p>Cypher Tijuana | EST 2022</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    
-    <!-- Script mejorado para el formulario -->
-    <script>
-        // Mejorar la experiencia del formulario
-        const form = document.getElementById('contactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const formStatus = document.getElementById('formStatus');
-        
-        form.addEventListener('submit', function(e) {
-            // Cambiar el botón mientras se envía
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="btn-text">Enviando...</span> <i class="fas fa-spinner fa-spin"></i>';
-            
-            // Mostrar mensaje de enviando
-            formStatus.innerHTML = '<p style="color: #666;">Enviando tu mensaje...</p>';
-            formStatus.style.display = 'block';
-        });
-        
-        // Si vuelve a la página después de enviar
-        if (window.location.search.includes('success')) {
-            formStatus.innerHTML = '<p style="color: #4CAF50;">¡Mensaje enviado correctamente! Te responderemos pronto.</p>';
-            formStatus.style.display = 'block';
-            form.reset();
-        }
-    </script>
 </body>
 </html>

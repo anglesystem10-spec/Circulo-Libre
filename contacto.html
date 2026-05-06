@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Círculo Libre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>CÍRCULO LIBRE</h1>
+                <span class="nav-subtitle">EST 2022</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="eventos.html"><i class="fas fa-calendar"></i> Eventos</a></li>
+                <li><a href="videos.html"><i class="fas fa-video"></i> Videos</a></li>
+                <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                <li><a href="drive.html"><i class="fas fa-cloud"></i> Drive</a></li>
+                <li><a href="contacto.html" class="active"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1 class="page-title animate-fade-in">Contacto</h1>
+        <p class="page-subtitle animate-slide-up">Únete a la comunidad</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info animate-fade-in">
+                    <h2>Información de Contacto</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Parque de la 8</p>
+                            <p>Zona Centro, Tijuana, B.C.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario de Sesiones</h3>
+                            <p>Sábados: 5:00 PM - 8:00 PM</p>
+                            <p>Cada 15 días (2 veces al mes)</p>
+                        </div>
+                    </div>
+                      <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>circulo_libre@outlook.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+52 664 495 4786</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h3>Co-Fundadores</h3>
+                            <p>Diego Ramos - Agua Prieta, Sonora</p>
+                            <p>Alexis Paredes - Tijuana, B.C.</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <!-- REEMPLAZA CON TUS ENLACES REALES -->
+                            <a href="https://www.facebook.com/TU_PAGINA" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/circulo_libre" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@circulo_libre" target="_blank" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@circulo_libre" target="_blank" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me/526644954786" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper animate-fade-in">
+                    <h2>Envíanos un Mensaje</h2>
+                    
+                    <!-- FORMULARIO CONFIGURADO CON TU FORMSPREE -->
+                    <form class="contact-form" 
+                          id="contactForm"
+                          action="https://formspree.io/f/mjgloowb" 
+                          method="POST">
+                        
+                        <!-- Campo oculto para identificar de dónde viene -->
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde Círculo Libre Web">
+                        
+                        <!-- Página de agradecimiento (opcional) -->
+                        <input type="hidden" name="_next" value="https://tu-sitio.github.io/gracias.html">
+                        
+                        <div class="form-group">
+                            <input type="text" 
+                                   name="nombre" 
+                                   placeholder="Nombre Completo" 
+                                   required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" 
+                                   name="email" 
+                                   placeholder="Correo Electrónico" 
+                                   required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" 
+                                   name="telefono" 
+                                   placeholder="Teléfono (Opcional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select name="asunto" required>
+                                <option value="">Selecciona un tema</option>
+                                <option value="Información sobre sesiones">Información sobre sesiones</option>
+                                <option value="Eventos y batallas">Eventos y batallas</option>
+                                <option value="Colaboración">Colaboración</option>
+                                <option value="Workshops">Workshops</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="mensaje" 
+                                     placeholder="Escribe tu mensaje aquí..." 
+                                     rows="5" 
+                                     required></textarea>
+                        </div>
+                        
+                        <!-- Botón de envío -->
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <!-- Mensaje de estado -->
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+               <p>&copy; 2026 Círculo Libre</p>
+            <p>Cypher Tijuana | EST 2022</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Script mejorado para el formulario -->
+    <script>
+        // Mejorar la experiencia del formulario
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formStatus = document.getElementById('formStatus');
+        
+        form.addEventListener('submit', function(e) {
+            // Cambiar el botón mientras se envía
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="btn-text">Enviando...</span> <i class="fas fa-spinner fa-spin"></i>';
+            
+            // Mostrar mensaje de enviando
+            formStatus.innerHTML = '<p style="color: #666;">Enviando tu mensaje...</p>';
+            formStatus.style.display = 'block';
+        });
+        
+        // Si vuelve a la página después de enviar
+        if (window.location.search.includes('success')) {
+            formStatus.innerHTML = '<p style="color: #4CAF50;">¡Mensaje enviado correctamente! Te responderemos pronto.</p>';
+            formStatus.style.display = 'block';
+            form.reset();
+        }
+    </script>
+</body>
+</html>
